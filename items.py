@@ -7,9 +7,9 @@ class Token (object):
         self.value = value
 
 SINGLE_TOKEN_SYNTAX = {
-    r"\".*?\"": "string",
-    r"\d+\.\d+": "float",
-    r"\d+": "integer",
-    r"\-\>": "arrow",
-    r"\n": "newline"
+    "string": re.compile(r"\".*?\""),
+    "float": re.compile(r"\d+\.\d+"),
+    "integer": re.compile(r"\d+"),
+    "arrow": re.compile(r"\-\>"),
+    "newline": re.compile(r"\n")
 }
