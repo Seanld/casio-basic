@@ -4,6 +4,7 @@ import re
 
 class Token (object):
     def __init__(self, t_type, value):
+        self.t_type = t_type
         self.value = value
 
 SINGLE_TOKEN_SYNTAX = {

@@ -4,7 +4,7 @@ import re
 import items
 import sys
 
-SOURCE_FILE = open(sysa.argv[1], "r")
+SOURCE_FILE = open(sys.argv[1], "r")
 SOURCE_CODE = SOURCE_PATH.read()
 SOURCE_FILE.close()
 
